@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="C:\code\projects\news-homepage\news-homepage.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <img class="logo" src="C:\code\news-homepage-main\assets\images\logo.svg" position="left" alt="logo">
+    <img class="menu-icon" onclick="openMenu()" src="C:\code\news-homepage-main\assets\images\icon-menu.svg"
+        role="button" alt="menu">
+    <div class="menu">
+        <img class="menu-close" onclick="closeMenu()" style="visibility: hidden"
+            src="C:\code\news-homepage-main\assets\images\icon-menu-close.svg" alt="close">
+        <section class="part-menu"><span class="hover">Home</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="hover">New</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="hover"> Popular</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hover">Trending</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hover">Categories</span>
+        </section>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector(`.menu-close`)
+        const overlay = document.querySelector(`.overlay`)
+
+        function openMenu() {
+            menu.style.visibility = `visible`;
+            close.style.visibility = `visible`;
+            overlay.style.visibility = `visible`;
+        }
+
+        function closeMenu() {
+            menu.style.visibility = `hidden`;
+            close.style.visibility = `hidden`;
+            overlay.style.visibility = `hidden`;
+        }
+    </script>
+
+    <img class="main" src="C:\code\news-homepage-main\assets\images\image-web-3-desktop.jpg" height="250px"
+        alt="colorful figures">
+    <img class="main-mobile" src="C:\code\news-homepage-main\assets\images\image-web-3-mobile.jpg"
+        alt="colorful figures">
+    <header>
+        The Bright
+        Future Of
+        Web 3.0?
+    </header>
+
+    <div class="paragraph">
+        <p>We dive into the next evolution of the web that
+            claims to put the power of the platforms back
+            into the hands of the people. But is it really
+            fulfilling its promise?</p>
+
+        <button href="https://esia.gosusl3ugi.ru/login/">R E A D &nbsp; M O R E</button>
+    </div>
+
+
+
+    <div class="new">
+        <h2>New</h2>
+
+        <div class="first">
+            <h3 class="different">Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up<br>
+                to EVs?</p>
+        </div>
+        <div class="second">
+            <h3>The Downsides of Al Artistry</h3>
+            <p>What are the possible effects of<br>
+                on-demand Al image generation?</p>
+        </div>
+        <div class="third">
+            <h3>Is VS Funding Drying Up?</h3>
+            <p>Private funding of VS firms is down 50%<br>
+                YOY. We take a look at what that means.</p>
+        </div>
+    </div>
+
+    <div class="retro">
+
+        <img class="rimage" src="C:\code\news-homepage-main\assets\images\image-retro-pcs.jpg" width=80px height=100px
+            alt="retro computer">
+        <span class="rtext">
+            <p class="number">01</p>
+            <h4>Reviving Retro PCs</h4>
+            <p class="bottom-p">What happens when ols PCs <br>
+                are given modern upgrades</p>
+        </span>
+
+    </div>
+
+    <diV class="laptops">
+
+        <img class="limage" src="C:\code\news-homepage-main\assets\images\image-top-laptops.jpg" width=80px height=100px
+            alt="keyboard">
+        <span class="ltext">
+            <p class="number">02</p>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p class="bottom-p">Our best picks for various <br>
+                needs and budjets</p>
+        </span>
+
+    </diV>
+
+    <div class="gaming">
+
+        <img class="gimage" src="C:\code\news-homepage-main\assets\images\image-gaming-growth.jpg" width=80px
+            height=100px alt="gamepad">
+        <span class="gtext">
+            <p class="number">03</p>
+            <h4>The Grows of Gaming</h4>
+            <p class="bottom-p">How the pandemic has sparked <br>
+                fresh opportunities</p>
+        </span>
+
+    </div>
+
+</body>
+
+</html>
